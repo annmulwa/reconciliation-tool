@@ -30,10 +30,11 @@ Finance and treasury teams often need to verify that their internal records matc
 
 ## 📂 Sample CSV Format
 
-```csv```
+```csv
 transaction_reference,amount,status
 TXN001,100.00,completed
 TXN002,50.00,pending
+```
 
 ---
 
