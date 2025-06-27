@@ -2,3 +2,80 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  padding: 30px;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 16px;
+  margin: 10px 5px 20px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+#results {
+  margin-top: 30px;
+}
+
+#results h2 {
+  margin-top: 30px;
+  color: #34495e;
+}
+
+#matched div,
+#onlyInternal div,
+#onlyProvider div {
+  border-radius: 6px;
+  padding: 10px;
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+#matched div {
+  background-color: #e0ffe0;
+  border-left: 4px solid #27ae60;
+}
+
+#onlyInternal div {
+  background-color: #fffbe0;
+  border-left: 4px solid #f1c40f;
+}
+
+#onlyProvider div {
+  background-color: #ffe0f0;
+  border-left: 4px solid #e74c3c;
+}
+
+small {
+  font-size: 0.85rem;
+  color: #c0392b;
+}

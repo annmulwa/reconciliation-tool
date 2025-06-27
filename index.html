@@ -1,16 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reconciliation Tool</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  Hello world
+  <h1>🧾 Mini Reconciliation Tool</h1>
+
+  <div>
+    <label>Upload Internal System Export:</label>
+    <input type="file" id="internalFile" accept=".csv" />
+  </div>
+
+  <div>
+    <label>Upload Provider Statement:</label>
+    <input type="file" id="providerFile" accept=".csv" />
+  </div>
+
+  <button id="compareBtn">Compare</button>
+
+  <div id="results">
+    <h2>✅ Matched Transactions</h2>
+    <button onclick="exportCSV('matched')">Export Matched</button>
+    <div id="matched"></div>
+
+    <h2>⚠️ Only in Internal</h2>
+    <button onclick="exportCSV('onlyInternal')">Export Internal</button>
+    <div id="onlyInternal"></div>
+
+    <h2>❌ Only in Provider</h2>
+    <button onclick="exportCSV('onlyProvider')">Export Provider</button>
+    <div id="onlyProvider"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
-
 </html>
